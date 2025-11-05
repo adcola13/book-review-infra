@@ -1,7 +1,7 @@
 # General Settings
 application_name = "DevOps1-pm"
 environment      = "dev"
-location         = "Central India"
+location         = "East US"
 
 # Networking Configuration
 vnet_address_space             = ["10.0.0.0/16"]
