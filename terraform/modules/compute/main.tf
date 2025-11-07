@@ -57,7 +57,7 @@ resource "azurerm_linux_virtual_machine" "frontend_vm" {
 
   admin_ssh_key {
     username   = var.admin_username
-    public_key = file("${path.module}/br_id_ed25519.pub")
+    public_key = file("${path.module}/id_rsa.pub")
   }
 
   source_image_reference {
@@ -87,7 +87,7 @@ resource "azurerm_linux_virtual_machine" "backend_vm" {
 
   admin_ssh_key {
     username   = var.admin_username
-    public_key = file("${path.module}/br_id_ed25519.pub")
+    public_key = file("${path.module}/id_rsa.pub")
   }
 
   source_image_reference {
