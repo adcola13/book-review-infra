@@ -1,4 +1,4 @@
-t variable "location" {
+variable "location" {
   description = "Region for the MySQL Flexible Server"
   type        = string
   default     = "East Asia" # pick a supported region for your subscription
